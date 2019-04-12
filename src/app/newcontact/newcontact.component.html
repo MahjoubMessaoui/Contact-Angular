@@ -1,0 +1,41 @@
+<!-- Main content -->
+<section class="content">
+  <div class="panel panel-primary">
+  <div>
+  <label class="control-label">le nom de contact</label>
+  <input class="form-control" type="text" [(ngModel)]="contact.nom" >
+</div>  
+
+<div>
+    <label class="control-label">le email de contact</label>
+    <input class="form-control" type="text" [(ngModel)]="contact.email" >
+  </div>
+
+
+  <div>
+      <label class="control-label">le prenom de contact</label>
+      <input class="form-control" type="text" [(ngModel)]="contact.prenom" >
+    </div>
+
+
+
+    <div>
+        <label class="control-label">le dateNaissance de contact</label>
+        <input class="form-control" type="date" [(ngModel)]="contact.dateNaissance" >
+      </div>
+
+
+      <div>
+          <label class="control-label">le  tel</label>
+          <input class="form-control" type="text" [(ngModel)]="contact.tel" >
+        </div>
+
+
+        <div>
+            <label class="control-label">le photo de contact</label>
+            <input class="form-control" type="text" [(ngModel)]="contact.photo" >
+          </div>
+          <button class="btn btn-primary" (click)="savecontact()" >save</button>
+        </div>
+
+</section><!-- /.content -->

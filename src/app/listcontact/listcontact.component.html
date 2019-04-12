@@ -1,0 +1,50 @@
+<!-- Main content -->
+<section class="content">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="box">
+        <div class="box-header">
+          <h3 class="box-title">Liste des Contacts</h3>
+        </div><!-- /.box-header -->
+     
+        <div class="box-body">
+
+           
+          <!--- <label>Chercher</label><br>
+          <input type="text" [(ngModel)]="cherche"><br>
+          <button class="btn btn-primary" (click)="chercher()">chercher</button>---->
+         
+          <table id="example1" class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>id</th>
+                <th>nom</th>
+                <th>prenom</th>
+                <th>dateNaissance</th>
+                <th>email</th>
+                <th>tel</th>
+                <th>photo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let i of datas">
+                <td>{{ i.id }}</td>
+                <td >{{ i.nom }}</td>
+                <td>{{ i.prenom }}</td>
+                <td>{{ i.dateNaissance }}</td>
+                <td>{{ i.email }}</td>
+                <td>{{ i.tel }}</td>
+                <td>{{ i.photo }}</td>
+              </tr>
+
+            </tbody>
+         
+          </table>
+           
+          <button class="btn btn-primary" [routerLink]="['/newcontact']"  >newcontact</button>
+   
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col -->
+  </div><!-- /.row -->
+</section><!-- /.content -->
